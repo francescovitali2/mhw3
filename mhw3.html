@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EVERLANE</title>
+    <link rel="stylesheet" href="mhw3.css"/>
+    <script src="mhw3.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header_cont">
+        <nav class="menu">
+          <a>Woman</a>
+          <a>Man</a>
+          <a>About</a>
+          <a>Everworld Stories</a>
+        </nav>
+        <header class="header">
+            <h1>Everlane</h1>
+        </header>
+    </div>
+
+    <section class="principale">
+      <div class="sovrapposizione">
+        <h2>Happy New Gear</h2>
+        <p>Flexible, comfort-driven styles,<br/> designed for every more</p>
+        <a class="tasto">SHOP NOW</a>
+      </div>
+    </section>
+    
+    <section class="prodotti_cat">
+      <h2>Shop by Category</h2>
+      <ul id="listaProdotti"></ul>
+      <button id="convertButton">Converti in USD</button>
+      </section>
+    
+    <footer>
+      <p>2024 Everlane. All rights reserved.</p>
+    </footer>
+
+    <div id="chatbot-widget" class="chatbot-widget">
+      <div class="chatbot-header">
+          <span class="close" onclick="chiudiChatbot()">&times;</span>
+          <h3>Chatbot</h3>
+      </div>
+      <div class="chatbot-body">
+          <div id="chatContainer"></div>
+          <input type="text" id="userInput" placeholder="Type your message...">
+          <button onclick="inviaMessaggioUtente()">Send</button>
+      </div>
+  </div>
+  <div id="openChatbotButton" class="chatbot-button" onclick="avviaChatbot()">BOT</div>
+  <script>
+    function avviaChatbot() {
+        const chatbotWidget = document.getElementById('chatbot-widget');
+        chatbotWidget.style.display = 'block';
+    }
+
+    function chiudiChatbot() {
+        const chatbotWidget = document.getElementById('chatbot-widget');
+        chatbotWidget.style.display = 'none';
+    }
+</script>
+</body>
+</html>
